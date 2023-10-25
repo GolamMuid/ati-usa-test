@@ -9,7 +9,7 @@ function Hero() {
 	const [counterOn, setCounterOn] = useState(false);
 
 	return (
-		<div className="container m-auto overflow-hidden">
+		<div className="container m-auto overflow-hidden mb-16">
 			<div
 				style={{
 					display: "grid",

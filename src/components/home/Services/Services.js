@@ -1,9 +1,12 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
+import { BsArrowRight } from "react-icons/bs";
+import PrimaryButton from "@/components/buttons/PrimaryButton";
+import styles from "@/styles/Services.module.css";
 
 function Services() {
 	return (
-		<div className="bg-servicesBg">
+		<div className={styles.service}>
 			<div className="container m-auto py-10">
 				<h1 className="text-center font-semibold text-6xl text-textPrimary">
 					Our Services
@@ -45,6 +48,7 @@ function Services() {
 						description="Mobile Billing & GPS Tracking"
 					/>
 				</div>
+				<PrimaryButton> More Services {<BsArrowRight />} </PrimaryButton>
 			</div>
 		</div>
 	);
